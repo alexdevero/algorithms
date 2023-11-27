@@ -1,0 +1,29 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Implementation of various algorithms for the purpose of learning.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexdevero/algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "typescript",
+    "javascript",
+    "cs"
+  ],
+  "author": "@alexdevero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexdevero/algorithms/issues"
+  },
+  "homepage": "https://github.com/alexdevero/algorithms#readme",
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
