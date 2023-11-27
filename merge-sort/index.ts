@@ -7,21 +7,27 @@ export function mergeSort(arr: any[]): any[] {
   const left = mergeSort(arr.slice(0, mid))
   const right = mergeSort(arr.slice(mid))
 
+  return merge(left, right)
+}
+
+function merge(left: any[], right: any[]) {
+  const result = []
+
   while (left.length && right.length) {
     if (left[0] < right[0]) {
-      arr.push(left.shift())
+      result.push(left.shift())
     } else {
-      arr.push(right.shift())
+      result.push(right.shift())
     }
   }
 
   while (left.length) {
-    arr.push(left.shift())
+    result.push(left.shift())
   }
 
   while (right.length) {
-    arr.push(right.shift())
+    result.push(right.shift())
   }
 
-  return arr
+  return result
 }
